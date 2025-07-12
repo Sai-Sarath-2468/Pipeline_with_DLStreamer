@@ -1,0 +1,20 @@
+{
+  "json_schema_version": "2.0.0",
+  "description": "Post-processing for person-attributes-recognition-crossroad-0230",
+  "layer_name": "prob",
+  "converter": "tensor_to_attributes",
+  "attribute_map": {
+    "0": {
+      "label": "is_male",
+      "attributes": ["female", "male"]
+    },
+    "1": {
+      "label": "has_bag",
+      "attributes": ["no", "yes"]
+    },
+    "2": {
+      "label": "has_hat",
+      "attributes": ["no", "yes"]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "json_schema_version": "2.0.0",
+  "description": "Post-processing for person-detection-retail-0013",
+  "layer_name": "detection_out",
+  "converter": "tensor_to_bbox_ssd",
+  "labels": ["person"],
+  "bbox_processing": {
+    "confidence_threshold": 0.5
+  }
+}

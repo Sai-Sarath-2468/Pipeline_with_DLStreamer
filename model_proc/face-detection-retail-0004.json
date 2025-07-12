@@ -1,0 +1,22 @@
+{
+  "json_schema_version": "2.0.0",
+  "input_preproc": [
+    {
+      "layer_name": "data",
+      "format": "image",
+      "precision": "u8",
+      "color_format": "BGR"
+    }
+  ],
+  "output_postproc": [
+    {
+      "layer_name": "detection_out",
+      "converter": "tensor_to_bbox_ssd",
+      "bbox_processing": {
+        "confidence_threshold": 0.5
+      },
+      "labels": ["person"]
+    }
+  ]
+}
+
